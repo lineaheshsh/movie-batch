@@ -1,0 +1,16 @@
+---
+spring:
+  datasource:
+    mysql:
+      jdbc-url: jdbc:mariadb://localhost:3306/zzangho
+      driver-class-name: org.mariadb.jdbc.Driver
+      username: root
+      password: 1q2w3e4r5t
+  batch:
+    job:
+      names: ${job.name:NONE}
+
+open:
+  api:
+    key: 8f0a0111f3288f27c8120512db076565
+    uri: http://kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json
